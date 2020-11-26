@@ -358,7 +358,9 @@ class SwingJPanelDemo extends JFrame {
         loginPanel panel3 = new loginPanel();
         ExamplePanel panel4 = new ExamplePanel();
         // add the panel to this frame
-
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setResizable(false);
+        //this.setUndecorated(true);
         JPanel panelWest = new JPanel(new GridLayout(2,1));
         panelWest.add(panel);
         panelWest.add(panel2);
